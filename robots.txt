@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://al2800.github.io/ShiftPro-Site/sitemap.xml
