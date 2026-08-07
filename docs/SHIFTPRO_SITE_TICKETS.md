@@ -10,17 +10,17 @@ This backlog is intentionally split into small, independently reviewable session
 - Cloudflare Pages is the production host for `shiftpro.uk`; the apex and `www` hosts resolve over HTTPS. The apex is the declared canonical host, while `www` currently serves the same site without a hard redirect to the apex.
 - The complete homepage-plus-guides build is publicly reachable at `https://shiftpro.uk/`, including the journal, privacy, terms, support, `robots.txt`, and `sitemap.xml` routes.
 - The reviewed source remains on `agent/lifetime-pro`. Remote `main` still contains the earlier minimal GitHub Pages build plus a `CNAME` file and is not the Cloudflare Pages production source.
-- Canonical, Open Graph, Twitter image, JSON-LD, robots, and sitemap URLs have been migrated to `https://shiftpro.uk` in seven local files and are already present in the live deployment; the source changes are not yet committed.
-- Privacy, terms, and support pages do not yet declare canonical tags, so SPS-002 remains open despite the completed stale-host migration in the existing metadata.
+- Canonical, Open Graph, Twitter image, JSON-LD, robots, and sitemap URLs have been migrated to `https://shiftpro.uk` and are present in the live deployment.
+- Every HTML page in the tracked source now declares a `https://shiftpro.uk/...` canonical URL, and no tracked public source retains stale GitHub Pages metadata references. The privacy, terms, and support canonical additions require verification after the next Cloudflare Pages deployment.
 - Current copy describes a free download plus lifetime Pro, which must be reconciled with the approved £4.99 paid-upfront product decision before public launch.
-- The current branch is `agent/lifetime-pro`; its only local changes are the seven metadata files and this backlog.
+- The reviewed source branch is `agent/lifetime-pro`.
 
 ## Status snapshot — 2026-08-07
 
 | Ticket | Status | Reconciliation note |
 | --- | --- | --- |
 | SPS-001 | Complete | Cloudflare Pages is selected and live; apex and `www` pass DNS, TLS, and HTTP checks. Apex is canonical and `www` is an alias. |
-| SPS-002 | In progress | Existing metadata, robots, and sitemap references are migrated and live. Add canonical tags to privacy, terms, and support to satisfy every-page coverage. |
+| SPS-002 | Complete | Canonical, social, structured-data, robots, and sitemap identity use `shiftpro.uk`; all HTML pages have canonical tags and no tracked public source retains the stale host. |
 | SPS-003 | Not started | Commercial and public-copy approval is still required. |
 | SPS-004 | In progress | The complete route matrix returns 200, but navigation, assets, console, and App Store checks still need a dated QA record. |
 | SPS-005 | Not started | No static-site CI quality gate is present. |
@@ -62,7 +62,7 @@ Dependencies: None.
 
 ## SPS-002 — Migrate canonical and social metadata to `shiftpro.uk`
 
-Status: In progress — stale-host migration is implemented and live; canonical coverage is incomplete on privacy, terms, and support.
+Status: Complete — verified in the tracked source on 2026-08-07; the next Cloudflare Pages deployment must be checked for the three newly added legal/support canonicals.
 
 Priority: P0
 Type: SEO / metadata
