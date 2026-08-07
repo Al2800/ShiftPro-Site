@@ -11,7 +11,7 @@ This backlog is intentionally split into small, independently reviewable session
 - The complete homepage-plus-guides build is publicly reachable at `https://shiftpro.uk/`, including the journal, privacy, terms, support, `robots.txt`, and `sitemap.xml` routes.
 - The reviewed source remains on `agent/lifetime-pro`. Remote `main` still contains the earlier minimal GitHub Pages build plus a `CNAME` file and is not the Cloudflare Pages production source.
 - Canonical, Open Graph, Twitter image, JSON-LD, robots, and sitemap URLs have been migrated to `https://shiftpro.uk` and are present in the live deployment.
-- Every HTML page in the tracked source now declares a `https://shiftpro.uk/...` canonical URL, and no tracked public source retains stale GitHub Pages metadata references. The privacy, terms, and support canonical additions require verification after the next Cloudflare Pages deployment.
+- Every HTML page in the tracked source now declares a `https://shiftpro.uk/...` canonical URL, and no tracked public source retains stale GitHub Pages metadata references. The privacy, terms, and support canonical additions require deployment and live verification; the configured Cloudflare token currently cannot read Pages projects (API code `10000`).
 - Current copy describes a free download plus lifetime Pro, which must be reconciled with the approved £4.99 paid-upfront product decision before public launch.
 - The reviewed source branch is `agent/lifetime-pro`.
 
@@ -20,9 +20,9 @@ This backlog is intentionally split into small, independently reviewable session
 | Ticket | Status | Reconciliation note |
 | --- | --- | --- |
 | SPS-001 | Complete | Cloudflare Pages is selected and live; apex and `www` pass DNS, TLS, and HTTP checks. Apex is canonical and `www` is an alias. |
-| SPS-002 | Complete | Canonical, social, structured-data, robots, and sitemap identity use `shiftpro.uk`; all HTML pages have canonical tags and no tracked public source retains the stale host. |
+| SPS-002 | In progress | Source is complete, but the privacy, terms, and support canonical tags have not reached the live Pages deployment; API authentication code `10000` blocks CLI project inspection/deployment. |
 | SPS-003 | Not started | Commercial and public-copy approval is still required. |
-| SPS-004 | In progress | The complete route matrix returns 200, but navigation, assets, console, and App Store checks still need a dated QA record. |
+| SPS-004 | Complete | Route, link, asset, App Store, representative browser, visual, and console checks passed; evidence is in `docs/SHIFTPRO_SITE_SMOKE_TEST_2026-08-07.md`. |
 | SPS-005 | Not started | No static-site CI quality gate is present. |
 | SPS-006 | In progress | The complete site is deployed to Cloudflare Pages, but source/rollback documentation and the remaining dependency gates are incomplete. |
 | SPS-007 | Not started | Accessibility and responsive QA remain outstanding. |
@@ -62,7 +62,7 @@ Dependencies: None.
 
 ## SPS-002 — Migrate canonical and social metadata to `shiftpro.uk`
 
-Status: Complete — verified in the tracked source on 2026-08-07; the next Cloudflare Pages deployment must be checked for the three newly added legal/support canonicals.
+Status: In progress — source checks passed on 2026-08-07; deployment and live verification of the three new legal/support canonicals are blocked by Cloudflare Pages API authentication code `10000`.
 
 Priority: P0
 Type: SEO / metadata
@@ -106,7 +106,7 @@ Dependencies: Current App Store commercial state must be confirmed by a human ow
 
 ## SPS-004 — Run a complete launch-route and link smoke test
 
-Status: In progress — route responses are verified; browser, asset, link, console, and App Store checks remain.
+Status: Complete — verified 2026-08-07; see `docs/SHIFTPRO_SITE_SMOKE_TEST_2026-08-07.md`.
 
 Priority: P0
 Type: QA
