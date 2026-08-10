@@ -9,26 +9,26 @@ This backlog is intentionally split into small, independently reviewable session
 - Static marketing site exists with homepage, three journal guides, privacy, terms, support, `robots.txt`, and `sitemap.xml`.
 - Cloudflare Pages is the production host for `shiftpro.uk`; the apex and `www` hosts resolve over HTTPS. The apex is the declared canonical host, while `www` currently serves the same site without a hard redirect to the apex.
 - The complete homepage-plus-guides build is publicly reachable at `https://shiftpro.uk/`, including the journal, privacy, terms, support, `robots.txt`, and `sitemap.xml` routes.
-- The reviewed source remains on `agent/lifetime-pro`. Remote `main` still contains the earlier minimal GitHub Pages build plus a `CNAME` file and is not the Cloudflare Pages production source.
+- The reviewed source branch `agent/lifetime-pro` is synchronized with its remote. PR #2 merged the reviewed site into remote `main` at merge commit `80fea587`; Cloudflare Pages remains a Direct Upload project whose configured production branch label is `agent/lifetime-pro`.
 - Canonical, Open Graph, Twitter image, JSON-LD, robots, and sitemap URLs have been migrated to `https://shiftpro.uk` and are present in the live deployment.
-- Every HTML page in the tracked source now declares a `https://shiftpro.uk/...` canonical URL, and no tracked public source retains stale GitHub Pages metadata references. The privacy, terms, and support canonical additions require deployment and live verification; the configured Cloudflare token currently cannot read Pages projects (API code `10000`).
+- Every HTML page in tracked source and the 2026-08-10 production deployment declares the expected `https://shiftpro.uk/...` canonical URL. Privacy, terms, and support passed focused live read-back; the configured Cloudflare token can now list and deploy the Pages project through Wrangler.
 - Current copy describes a free download plus lifetime Pro, which must be reconciled with the approved £4.99 paid-upfront product decision before public launch.
 - The reviewed source branch is `agent/lifetime-pro`.
 
-## Status snapshot — 2026-08-07
+## Status snapshot — 2026-08-10
 
 | Ticket | Status | Reconciliation note |
 | --- | --- | --- |
 | SPS-001 | Complete | Cloudflare Pages is selected and live; apex and `www` pass DNS, TLS, and HTTP checks. Apex is canonical and `www` is an alias. |
-| SPS-002 | In progress | Source is complete, but the privacy, terms, and support canonical tags have not reached the live Pages deployment; API authentication code `10000` blocks CLI project inspection/deployment. |
+| SPS-002 | Complete | Cloudflare production deployment `e529ade2` serves all expected production canonicals; focused live read-back and the 45-check release verifier pass. |
 | SPS-003 | Not started | Commercial and public-copy approval is still required. |
 | SPS-004 | Complete | Route, link, asset, App Store, representative browser, visual, and console checks passed; evidence is in `docs/SHIFTPRO_SITE_SMOKE_TEST_2026-08-07.md`. |
 | SPS-005 | Not started | No static-site CI quality gate is present. |
-| SPS-006 | In progress | The complete site is deployed to Cloudflare Pages, but source/rollback documentation and the remaining dependency gates are incomplete. |
+| SPS-006 | In progress | PR #2 merged the reviewed site to `main` and approval-scoped Wrangler deployment is verified; durable rollback/release documentation remains incomplete. |
 | SPS-007 | Not started | Accessibility and responsive QA remain outstanding. |
 | SPS-008 | Not started | Support, privacy, and legal review remain outstanding. |
 | SPS-009 | Not started | App Store CTA and product identity verification remain outstanding. |
-| SPS-010 | Not started | Search Console and privacy-safe measurement work remain outstanding. |
+| SPS-010 | In progress | `sc-domain:shiftpro.uk` is API-verified as owner, the sitemap has zero errors/warnings, and the homepage is indexed; scheduled query/page ingestion and campaign attribution remain in `Al2800/marketing-os` issues #5 and #4. |
 | SPS-011 | Not started | Performance and asset-hygiene work remain outstanding. |
 | SPS-012 | Not started | The next evidence-backed content tranche has not started. |
 
@@ -62,7 +62,7 @@ Dependencies: None.
 
 ## SPS-002 — Migrate canonical and social metadata to `shiftpro.uk`
 
-Status: In progress — source checks passed on 2026-08-07; deployment and live verification of the three new legal/support canonicals are blocked by Cloudflare Pages API authentication code `10000`.
+Status: Complete — source checks passed on 2026-08-07; Cloudflare production deployment `e529ade2-27a4-4ca0-be1b-2cc9246b427f` and live read-back passed on 2026-08-10.
 
 Priority: P0
 Type: SEO / metadata
@@ -149,12 +149,12 @@ Dependencies: SPS-002; choose the hosting/deployment target in SPS-001.
 
 ## SPS-006 — Promote the reviewed site branch and document deployment/rollback
 
-Status: In progress — full site is live on Cloudflare Pages; source and rollback documentation remain.
+Status: In progress — full site is live on Cloudflare Pages, PR #2 is merged, and approval-scoped CLI deployment is verified; durable rollback/release documentation remains.
 
 Priority: P0
 Type: Release / operations
 
-Goal: Make the complete reviewed site—not the current minimal `main` deployment—the single public production build.
+Goal: Keep the complete reviewed site as the single public production build with a reproducible, approval-scoped deployment and rollback procedure.
 
 Acceptance criteria:
 
@@ -238,7 +238,7 @@ Dependencies: SPS-003; App Store state must be verified read-only first.
 
 ## SPS-010 — Add privacy-safe measurement and Search Console readiness
 
-Status: Not started.
+Status: In progress — Search Console verification, sitemap submission and homepage inspection are complete; scheduled performance ingestion and campaign attribution remain.
 
 Priority: P1
 Type: Measurement / SEO operations
@@ -252,6 +252,14 @@ Acceptance criteria:
 - Cloudflare traffic evidence is clearly distinguished from confirmed human visitors and bot/AI traffic.
 - No RUM, third-party analytics, cookies, or tracking SDK is enabled without explicit approval.
 - Any campaign attribution plan records the data source, retention, and human approval boundary.
+
+Evidence recorded 2026-08-10:
+
+- Google Cloud project `shiftpro-marketing-os-aa68a4` owns the API quota.
+- `sc-domain:shiftpro.uk` is verified with `siteOwner` permission through Google Site Verification plus a Cloudflare-managed DNS TXT record.
+- `https://shiftpro.uk/sitemap.xml` was submitted by API and read back with zero errors and zero warnings.
+- URL Inspection reports `https://shiftpro.uk/` as PASS, submitted and indexed, fetch successful, robots allowed, and canonicalized to itself.
+- Recurring query/page ingestion is tracked in private `Al2800/marketing-os` issue #5; campaign attribution is issue #4.
 
 Dependencies: SPS-001 and SPS-002.
 
