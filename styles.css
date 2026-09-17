@@ -187,6 +187,17 @@ h1 em { font-style: normal; color: transparent; background: linear-gradient(120d
 .site-footer p { margin: 0; }
 .copyright { grid-column: 1/-1; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.05); color: #707786; }
 
+.hub-faq { margin: 0 0 80px; padding: 48px 40px; border: 1px solid var(--line); border-radius: 28px; background: linear-gradient(145deg,rgba(255,255,255,.035),rgba(255,255,255,.015)); }
+.hub-faq-header { max-width: 680px; margin-bottom: 36px; }
+.hub-faq-header h2 { font-size: clamp(26px,3.5vw,36px); line-height: 1.1; letter-spacing: -.035em; margin: 0 0 10px; }
+.hub-faq-header p { color: var(--muted); font-size: 16px; margin: 0; }
+.hub-faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.hub-faq-card { padding: 26px 28px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.02); display: flex; flex-direction: column; }
+.hub-faq-card h3 { font-size: 18px; line-height: 1.25; letter-spacing: -.02em; margin: 0 0 12px; color: #fff; }
+.hub-faq-card p { color: #c2c8d3; font-size: 14.5px; line-height: 1.6; margin: 0; }
+.hub-faq-card a { color: #8fb4ee; text-decoration: none; font-weight: 500; }
+.hub-faq-card a:hover { text-decoration: underline; }
+
 .legal-page { min-height: 100vh; }
 .legal-header { width: min(820px,calc(100% - 40px)); margin: auto; height: 82px; display: flex; justify-content: space-between; align-items: center; }
 .legal-header a:not(.brand) { color: var(--muted); text-decoration: none; font-size: 14px; }
@@ -243,6 +254,8 @@ h1 em { font-style: normal; color: transparent; background: linear-gradient(120d
   .journal-hero { padding-top: 55px; }
   .guide-finder { padding: 24px; margin-bottom: 38px; }
   .guide-finder-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hub-faq { padding: 28px 20px; margin-bottom: 50px; }
+  .hub-faq-grid { grid-template-columns: 1fr; gap: 16px; }
   .journal-preview { padding-bottom: 88px; }
   .journal-cta { padding: 56px 24px; margin-bottom: 82px; }
   .article-content { padding-top: 35px; }
