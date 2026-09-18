@@ -261,6 +261,16 @@ Evidence recorded 2026-08-10:
 - URL Inspection reports `https://shiftpro.uk/` as PASS, submitted and indexed, fetch successful, robots allowed, and canonicalized to itself.
 - Recurring query/page ingestion is tracked in private `Al2800/marketing-os` issue #5; campaign attribution is issue #4.
 
+Evidence recorded 2026-09-18:
+
+- GSC snapshot: 1.42K impressions; page indexing noise reviewed: ~10 "Page with redirect", 5 "Alternate page with proper canonical", 2 "Duplicate, Google chose different canonical".
+- Audited all 17 HTML pages, `sitemap.xml`, and live HTTP redirect headers:
+  - 100% of internal navigation and contextual cross-links reference the preferred canonical URLs (`https://shiftpro.uk/`, `https://shiftpro.uk/journal/`, and `https://shiftpro.uk/journal/<slug>.html`).
+  - Zero internal links omit `.html` or use `http://` / `www.shiftpro.uk`.
+  - Cloudflare edge correctly issues HTTP 301 redirects from extensionless URLs (e.g. `/journal/<slug>` -> `/journal/<slug>.html`), non-trailing-slash `/journal` -> `/journal/`, HTTP -> HTTPS, and `www` -> apex.
+  - The GSC duplicate/redirect noise reflects lagging crawl evaluation of historical extensionless/HTTP/alias variants now resolving to apex `.html`.
+- CTR check on `journal/nhs-shift-rota-patterns.html` (111 impressions, position ~5.9): confirmed metadata and title are already strong post-PR #13; no copy intervention needed.
+
 Dependencies: SPS-001 and SPS-002.
 
 ---
