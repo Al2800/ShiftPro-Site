@@ -197,6 +197,8 @@ h1 em { font-style: normal; color: transparent; background: linear-gradient(120d
 .hub-faq-card p { color: #c2c8d3; font-size: 14.5px; line-height: 1.6; margin: 0; }
 .hub-faq-card a { color: #8fb4ee; text-decoration: none; font-weight: 500; }
 .hub-faq-card a:hover { text-decoration: underline; }
+.article-content .hub-faq { margin: 56px 0 40px; max-width: 720px; padding: 36px 32px; }
+.article-content .hub-faq-grid { grid-template-columns: 1fr; gap: 16px; }
 
 .legal-page { min-height: 100vh; }
 .legal-header { width: min(820px,calc(100% - 40px)); margin: auto; height: 82px; display: flex; justify-content: space-between; align-items: center; }
@@ -256,6 +258,7 @@ h1 em { font-style: normal; color: transparent; background: linear-gradient(120d
   .guide-finder-grid { grid-template-columns: 1fr; gap: 20px; }
   .hub-faq { padding: 28px 20px; margin-bottom: 50px; }
   .hub-faq-grid { grid-template-columns: 1fr; gap: 16px; }
+  .article-content .hub-faq { padding: 28px 20px; margin: 44px 0 36px; }
   .journal-preview { padding-bottom: 88px; }
   .journal-cta { padding: 56px 24px; margin-bottom: 82px; }
   .article-content { padding-top: 35px; }
