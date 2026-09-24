@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-09-24 - PR #23
+- Date merged: 2026-09-24
+- PR: #23 https://github.com/Al2800/ShiftPro-Site/pull/23
+- Page URL(s) changed: https://shiftpro.uk/journal/shift-rota-vs-work-rota.html
+- Search query or queries that prompted it: "work rota", "shift rota", "shift rotas"
+- GSC numbers at the time: page 103i/0c pos~28.2 (28d as of 2026-09-23 snapshot); site 7c/2160i
+- What changed: Added a visible seven-question FAQ section with matching FAQPage JSON-LD schema, direct first-sentence answers, and lead polish to explain the shift rota vs work rota distinction in ~20 seconds. Updated sitemap lastmod.
+Result (check ~4 weeks after): 
+
 ## 2026-09-23 - PR #21
 - Date merged: 2026-09-23
 - PR: #21 https://github.com/Al2800/ShiftPro-Site/pull/21
