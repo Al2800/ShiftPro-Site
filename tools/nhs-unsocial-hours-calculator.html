@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>NHS Unsocial Hours Calculator: Agenda for Change Enhancements | ShiftPro</title>
+  <meta name="description" content="Free NHS unsocial hours calculator. Enter your band, hourly rate and shifts to estimate Agenda for Change night, Saturday, Sunday and bank holiday enhancements.">
+  <meta name="author" content="ShiftPro">
+  <meta name="theme-color" content="#080a0e"><link rel="canonical" href="https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html"><link rel="icon" href="../assets/app-icon.png"><link rel="stylesheet" href="../styles.css">
+  <meta name="apple-itunes-app" content="app-id=6757769405">
+  <meta property="og:type" content="website"><meta property="og:title" content="NHS Unsocial Hours Calculator | ShiftPro"><meta property="og:description" content="Estimate Agenda for Change unsocial hours enhancements for your nights, weekends and bank holidays."><meta property="og:url" content="https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html"><meta property="og:image" content="https://shiftpro.uk/assets/og.png"><meta property="og:site_name" content="ShiftPro"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="NHS Unsocial Hours Calculator | ShiftPro"><meta name="twitter:description" content="Estimate Agenda for Change unsocial hours enhancements for your nights, weekends and bank holidays."><meta name="twitter:image" content="https://shiftpro.uk/assets/og.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"NHS Unsocial Hours Calculator","url":"https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"description":"Estimate NHS Agenda for Change unsocial hours enhancements (England) for night, Saturday, Sunday and bank holiday shifts.","publisher":{"@type":"Organization","name":"ShiftPro","url":"https://shiftpro.uk/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ShiftPro","item":"https://shiftpro.uk/"},{"@type":"ListItem","position":2,"name":"NHS unsocial hours calculator","item":"https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html"}]}</script>
+</head>
+<body class="article-page"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="/" aria-label="ShiftPro home"><img src="../assets/app-icon.png" alt="" width="42" height="42"><span>Shift<span>Pro</span></span></a><nav aria-label="Main navigation"><a href="/#features">Features</a><a href="/journal/">Guides</a><a href="/#privacy">Privacy</a><a href="/support.html">Support</a></nav><a class="header-cta" href="https://apps.apple.com/app/apple-store/id6757769405?pt=128448172&amp;ct=tool-nhs-unsocial-hours&amp;mt=8" rel="noopener">View on App Store</a></header>
+<main id="main" class="article-content"><p class="breadcrumbs"><a href="/">ShiftPro</a> <span aria-hidden="true">/</span> NHS unsocial hours calculator</p><p class="article-kicker">Free tool · Agenda for Change (England)</p><h1>NHS unsocial hours calculator</h1><p class="article-intro">Enter your band, your hourly rate and the shifts you worked. The calculator splits each shift into weekday, night, Saturday, Sunday and bank holiday time and estimates the enhancement you should see on your payslip.</p>
+
+<form class="calc" id="calc" novalidate>
+  <div class="calc-row">
+    <label class="calc-field"><span>Pay band</span>
+      <select id="band">
+        <option value="1">Band 1</option>
+        <option value="2">Band 2</option>
+        <option value="3">Band 3</option>
+        <option value="4" selected>Band 4 to 9</option>
+      </select>
+    </label>
+    <label class="calc-field"><span>Basic hourly rate (£)</span>
+      <input id="rate" type="number" inputmode="decimal" min="0" step="0.01" value="17.50">
+    </label>
+    <label class="calc-field"><span>Or annual salary (£)</span>
+      <input id="salary" type="number" inputmode="decimal" min="0" step="1" placeholder="e.g. 34,000">
+    </label>
+  </div>
+  <p class="calc-hint">Your hourly rate is on your payslip. If you enter an annual salary, we convert it for a full-time 37.5-hour week (salary ÷ 52.143 weeks ÷ 37.5 hours).</p>
+
+  <h2 class="calc-heading">Your shifts</h2>
+  <div id="shifts" class="calc-shifts"></div>
+  <div class="calc-actions">
+    <button type="button" class="calc-btn" data-add="07:00,19:30,30">+ Long day</button>
+    <button type="button" class="calc-btn" data-add="19:30,08:00,30">+ Night</button>
+    <button type="button" class="calc-btn" data-add="07:30,16:00,30">+ Early</button>
+    <button type="button" class="calc-btn" data-add="13:30,22:00,30">+ Late</button>
+  </div>
+</form>
+
+<section class="calc-results" aria-live="polite" aria-label="Results">
+  <div class="calc-totals">
+    <div><span>Paid hours</span><strong id="t-hours">0</strong></div>
+    <div><span>Basic pay</span><strong id="t-basic">£0.00</strong></div>
+    <div><span>Unsocial enhancements</span><strong id="t-enh" class="calc-accent">£0.00</strong></div>
+    <div><span>Total before tax</span><strong id="t-total">£0.00</strong></div>
+  </div>
+  <ul id="breakdown" class="calc-breakdown"></ul>
+  <p class="calc-hint">An estimate for contracted hours in England, not payroll advice. Check your payslip and your trust's local agreements.</p>
+</section>
+
+<div class="final-cta calc-cta"><img src="../assets/app-icon.png" alt="" width="64" height="64"><p class="eyebrow"><span></span> Keep your own record</p><h2>Log every shift as you work it.</h2><p>ShiftPro keeps the times you actually worked, your breaks and your pay rates on your iPhone, so you have your own record to check against ESR each month. No account, no ads.</p><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6757769405?pt=128448172&amp;ct=tool-nhs-unsocial-hours&amp;mt=8" rel="noopener" aria-label="Download ShiftPro on the App Store"><img src="../assets/download-on-app-store.svg" alt="Download on the App Store" width="190" height="64"></a></div>
+
+<div class="article-body">
+<h2>How the calculator works</h2>
+<p>Agenda for Change pays an enhancement on top of your basic hourly rate for time worked in unsocial hours. In England the rates are:</p>
+<div class="calc-table-wrap"><table class="calc-table">
+  <thead><tr><th scope="col">Pay band</th><th scope="col">Weekday nights (20:00 to 06:00) and Saturdays</th><th scope="col">Sundays and public holidays</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Band 1</th><td>time plus 47%</td><td>time plus 94%</td></tr>
+    <tr><th scope="row">Band 2</th><td>time plus 41%</td><td>time plus 83%</td></tr>
+    <tr><th scope="row">Band 3</th><td>time plus 35%</td><td>time plus 69%</td></tr>
+    <tr><th scope="row">Bands 4 to 9</th><td>time plus 30%</td><td>time plus 60%</td></tr>
+  </tbody>
+</table></div>
+<p>Source: <a href="https://www.nhsemployers.org/articles/unsocial-hours-payments" rel="noopener">NHS Employers, unsocial hours payments</a> (Section 2, England). Rates checked 24 September 2026.</p>
+<p><strong>Shifts that cross midnight</strong> are split at midnight, so a Saturday night that runs into Sunday is paid at the Saturday rate until 00:00 and the Sunday rate after it. <strong>Bank holidays</strong> for England and Wales are detected from the date automatically.</p>
+<p><strong>The more-than-half rule.</strong> On a weekday that is not a public holiday, if more than half of a shift falls in unsocial time, the whole shift qualifies. The calculator applies this by counting night, Saturday, Sunday and bank holiday time together. If that is more than half the shift, the weekday daytime hours of that shift are also enhanced at the night rate.</p>
+<p><strong>Unpaid breaks</strong> are taken off each shift in proportion to its unsocial and daytime hours, because the calculator does not know exactly when you took your break.</p>
+
+<h2>Worked example</h2>
+<p>A Band 5 nurse on £17.50 an hour works a Wednesday night from 19:30 to 08:00 with a 30-minute unpaid break. Ten of the 12.5 hours fall between 20:00 and 06:00, so more than half the shift is unsocial and all 12 paid hours get the 30% enhancement: 12 × £17.50 × 30% = £63.00 on top of £210.00 basic pay.</p>
+
+<h2>What this calculator does not cover</h2>
+<p>Overtime is paid at the overtime rate (time and a half, or double time on a general public holiday) instead of the unsocial hours rate. Resident doctors are on a different contract. Scotland, Wales and Northern Ireland set their own terms. High cost area supplements are not included in the hourly rate used for enhancements. For how NHS rotas are built, see our guide to <a href="/journal/nhs-shift-rota-patterns.html">NHS shift rota patterns</a>, and for keeping your own record of hours, read <a href="/journal/track-actual-hours-and-pay.html">how to track rota hours and estimated pay</a>.</p>
+</div>
+<a class="text-link article-back" href="/journal/">← Back to all guides</a></main><footer class="site-footer"><div class="brand footer-brand"><img src="../assets/app-icon.png" alt="" width="34" height="34"><span>Shift<span>Pro</span></span></div><p>Private shift planning for iPhone and iPad.</p><nav aria-label="Legal and support"><a href="/journal/">Guides</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/support.html">Support</a></nav><p class="copyright">© 2026 ShiftPro. Pay calculations are estimates based on information you enter.</p></footer>
+<script>
+(function () {
+  // Agenda for Change Section 2 (England): [weekday night and Saturday, Sunday and public holiday]
+  var RATES = { "1": [0.47, 0.94], "2": [0.41, 0.83], "3": [0.35, 0.69], "4": [0.30, 0.60] };
+  // England and Wales bank holidays, from https://www.gov.uk/bank-holidays.json (update yearly)
+  var BANK_HOLIDAYS = ["2025-01-01","2025-04-18","2025-04-21","2025-05-05","2025-05-26","2025-08-25","2025-12-25","2025-12-26","2026-01-01","2026-04-03","2026-04-06","2026-05-04","2026-05-25","2026-08-31","2026-12-25","2026-12-28","2027-01-01","2027-03-26","2027-03-29","2027-05-03","2027-05-31","2027-08-30","2027-12-27","2027-12-28","2028-01-03","2028-04-14","2028-04-17","2028-05-01","2028-05-29","2028-08-28","2028-12-25","2028-12-26"];
+  var DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  var shiftsEl = document.getElementById("shifts");
+  var bandEl = document.getElementById("band");
+  var rateEl = document.getElementById("rate");
+  var salaryEl = document.getElementById("salary");
+
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function isoDate(d) { return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate()); }
+  function parseDate(s) { var p = s.split("-"); return new Date(Date.UTC(+p[0], +p[1] - 1, +p[2])); }
+  function toMinutes(t) { var p = t.split(":"); return (+p[0]) * 60 + (+p[1]); }
+  function money(n) { return "£" + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+  function hours(mins) { return (Math.round(mins / 6) / 10).toString(); }
+
+  function addShift(date, start, end, brk) {
+    var row = document.createElement("div");
+    row.className = "calc-shift";
+    row.innerHTML =
+      '<label class="calc-field"><span>Date</span><input type="date" class="s-date" value="' + date + '"></label>' +
+      '<label class="calc-field"><span>Start</span><input type="time" class="s-start" value="' + start + '"></label>' +
+      '<label class="calc-field"><span>Finish</span><input type="time" class="s-end" value="' + end + '"></label>' +
+      '<label class="calc-field"><span>Unpaid break (min)</span><input type="number" inputmode="numeric" min="0" step="5" class="s-break" value="' + brk + '"></label>' +
+      '<button type="button" class="calc-remove" aria-label="Remove shift">×</button>';
+    shiftsEl.appendChild(row);
+  }
+
+  // Classify each minute of a shift and apply the more-than-half rule.
+  function splitShift(dateStr, start, end, brk) {
+    var s = toMinutes(start), e = toMinutes(end);
+    if (e <= s) e += 1440;
+    var base = parseDate(dateStr);
+    var mins = { day: 0, night: 0, sat: 0, sun: 0 };
+    var bankHoliday = false;
+    for (var m = s; m < e; m++) {
+      var d = new Date(base.getTime() + Math.floor(m / 1440) * 86400000);
+      var tod = m % 1440, dow = d.getUTCDay();
+      if (BANK_HOLIDAYS.indexOf(isoDate(d)) !== -1) { mins.sun++; bankHoliday = true; }
+      else if (dow === 0) mins.sun++;
+      else if (dow === 6) mins.sat++;
+      else if (tod >= 1200 || tod < 360) mins.night++;
+      else mins.day++;
+    }
+    var total = e - s;
+    var wholeShift = false;
+    if (mins.day > 0 && (mins.night + mins.sat + mins.sun) * 2 > total) {
+      mins.night += mins.day; mins.day = 0; wholeShift = true;
+    }
+    var paid = Math.max(0, total - Math.min(brk, total));
+    var ratio = total ? paid / total : 0;
+    Object.keys(mins).forEach(function (k) { mins[k] *= ratio; });
+    return { mins: mins, paid: paid, wholeShift: wholeShift, bankHoliday: bankHoliday, dow: base.getUTCDay() };
+  }
+
+  function calculate() {
+    var salary = parseFloat(salaryEl.value);
+    var rate = salary > 0 ? salary / 52.143 / 37.5 : parseFloat(rateEl.value) || 0;
+    if (salary > 0) rateEl.value = rate.toFixed(2);
+    var pct = RATES[bandEl.value];
+    var tot = { paid: 0, basic: 0, enh: 0 };
+    var list = document.getElementById("breakdown");
+    list.innerHTML = "";
+
+    shiftsEl.querySelectorAll(".calc-shift").forEach(function (row) {
+      var date = row.querySelector(".s-date").value;
+      var start = row.querySelector(".s-start").value;
+      var end = row.querySelector(".s-end").value;
+      var brk = Math.max(0, parseFloat(row.querySelector(".s-break").value) || 0);
+      if (!date || !start || !end) return;
+      var r = splitShift(date, start, end, brk);
+      var basic = r.paid / 60 * rate;
+      var enh = ((r.mins.night + r.mins.sat) * pct[0] + r.mins.sun * pct[1]) / 60 * rate;
+      tot.paid += r.paid; tot.basic += basic; tot.enh += enh;
+
+      var parts = [];
+      if (r.mins.day) parts.push(hours(r.mins.day) + "h standard");
+      if (r.mins.night) parts.push(hours(r.mins.night) + "h night");
+      if (r.mins.sat) parts.push(hours(r.mins.sat) + "h Saturday");
+      if (r.mins.sun) parts.push(hours(r.mins.sun) + "h " + (r.bankHoliday ? "Sunday/bank holiday" : "Sunday"));
+      var li = document.createElement("li");
+      li.innerHTML = "<div><strong>" + DAYS[r.dow] + " " + date.split("-").reverse().join("/") + ", " + start + " to " + end + "</strong>" +
+        "<span>" + hours(r.paid) + " paid hours: " + parts.join(", ") +
+        (r.wholeShift ? ". More than half unsocial, so the whole shift is enhanced." : "") +
+        (r.bankHoliday ? " Includes a bank holiday." : "") + "</span></div>" +
+        "<b>+" + money(enh) + "</b>";
+      list.appendChild(li);
+    });
+
+    document.getElementById("t-hours").textContent = hours(tot.paid);
+    document.getElementById("t-basic").textContent = money(tot.basic);
+    document.getElementById("t-enh").textContent = money(tot.enh);
+    document.getElementById("t-total").textContent = money(tot.basic + tot.enh);
+  }
+
+  // Start with an example week: Wednesday night, Saturday long day, Sunday long day.
+  var today = new Date();
+  var monday = new Date(Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()));
+  monday = new Date(monday.getTime() + ((8 - monday.getUTCDay()) % 7) * 86400000);
+  function dayOffset(n) { return isoDate(new Date(monday.getTime() + n * 86400000)); }
+  addShift(dayOffset(2), "19:30", "08:00", 30);
+  addShift(dayOffset(5), "07:00", "19:30", 30);
+  addShift(dayOffset(6), "07:00", "19:30", 30);
+
+  document.querySelectorAll("[data-add]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var p = btn.getAttribute("data-add").split(",");
+      var dates = shiftsEl.querySelectorAll(".s-date");
+      var last = dates.length ? dates[dates.length - 1].value : "";
+      var next = last ? isoDate(new Date(parseDate(last).getTime() + 86400000)) : dayOffset(0);
+      addShift(next, p[0], p[1], p[2]);
+      calculate();
+    });
+  });
+  shiftsEl.addEventListener("click", function (e) {
+    if (e.target.classList.contains("calc-remove")) { e.target.closest(".calc-shift").remove(); calculate(); }
+  });
+  rateEl.addEventListener("input", function () { salaryEl.value = ""; calculate(); });
+  document.getElementById("calc").addEventListener("input", function (e) { if (e.target !== rateEl) calculate(); });
+  document.getElementById("calc").addEventListener("submit", function (e) { e.preventDefault(); });
+  calculate();
+})();
+</script>
+</body></html>
