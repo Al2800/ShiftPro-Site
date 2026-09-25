@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-09-24 - PR #24
+- Date merged: not merged yet
+- PR: #24 https://github.com/Al2800/ShiftPro-Site/pull/24
+- Page URL(s) changed: https://shiftpro.uk/, https://shiftpro.uk/journal/, https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html, https://shiftpro.uk/journal/rotating-vs-fixed-shift-patterns.html, plus App Store link targets on every journal page
+- Search query or queries that prompted it: "nhs unsocial hours", "agenda for change unsocial hours", "nhs shift patterns" (accuracy fix on the converting page); no query for the attribution and pricing changes
+- GSC numbers at the time: NHS page 6c/326i pos~6 (28d to 2026-09-20); site 7c/~2160i pos 33.1
+- What changed: Corrected Agenda for Change unsocial hours rates on the NHS page to the England rates (Band 1 +47%/+94%, Band 2 +41%/+83%, Band 3 +35%/+69%, Bands 4 to 9 +30%/+60%; NHS Employers, reviewed Sep 2025, checked 2026-09-24), added the whole-shift rule and overtime note, and linked the source. Replaced every App Store button link with a per-page App Store campaign link (pt=128448172, ct=web-<slug>) so downloads can be attributed. Removed "£4.99 one-time, no subscription" claims that conflict with the live listing's optional subscriptions; the homepage title and H1 now target shift workers' hours and pay. Removed em dashes. Added docs/SEO_BRIEF.md as the new operating brief and pointed AGENTS.md at it.
+Result (check ~4 weeks after): 
+
 ## 2026-09-24 - PR #23
 - Date merged: 2026-09-24
 - PR: #23 https://github.com/Al2800/ShiftPro-Site/pull/23
