@@ -6,13 +6,16 @@ Read this first, then `docs/SEO_BRIEF.md` (how to work) and `SEO_CHANGELOG.md` (
 
 ## Where things stand
 
-Nothing from the reset has been merged yet. Three PRs are open and all have been auto-approved by the Cursor Approval Agent. That approval is not a human review.
+Nothing from the reset has been merged yet. The three reset PRs (#24, #25 and App #15) are open and have been auto-approved by the Cursor Approval Agent. That approval is not a human review. App #1 is also open as a pre-existing draft and is the base branch for #15, so four PRs are open across the two repos.
 
 | PR | What it does | Status |
 |---|---|---|
 | [Site #24](https://github.com/Al2800/ShiftPro-Site/pull/24) | Corrects NHS pay rates, adds App Store campaign links, fixes pricing claims, adds `SEO_BRIEF.md` and this handoff | Open. Merge first. |
 | [Site #25](https://github.com/Al2800/ShiftPro-Site/pull/25) | New free NHS unsocial hours calculator at `/tools/nhs-unsocial-hours-calculator.html` | Open. Stacked on #24, and GitHub retargets it to `main` once #24 merges. |
-| [App #15](https://github.com/Al2800/ShiftPro/pull/15) | Version 1.1: one-time £4.99 lifetime Pro instead of subscriptions, rating prompt, updated App Store metadata | Open. **Not compiled.** Needs an Xcode build and tests before merging. |
+| [App #1](https://github.com/Al2800/ShiftPro/pull/1) | Submission-readiness branch for the shipped 1.0 baseline; base of App #15 | Open draft. Resolve this stack before #15 reaches `main`. |
+| [App #15](https://github.com/Al2800/ShiftPro/pull/15) | Version 1.1: one-time £4.99 lifetime Pro instead of subscriptions, rating prompt, updated App Store metadata | Open. **Not compiled.** Stacked on #1; needs an Xcode build and tests before merging. |
+
+**Merge sequence:** Site #24 → #25. App #1 → #15; #15 remains gated on an Xcode build, `ShiftProTests`, and the Mac check in Owner actions.
 
 Numbers at the time (GSC, 28 days to 20 Sep 2026): 7 clicks, about 2,160 impressions, average position 33.1. The NHS guide had 6 of the 7 clicks (326 impressions, position about 6). The App Store listing had 0 ratings and was still on version 1.0, released 22 July 2026.
 
