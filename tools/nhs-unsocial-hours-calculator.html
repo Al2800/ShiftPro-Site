@@ -112,16 +112,20 @@
     shiftsEl.appendChild(row);
   }
 
-  // Classify each minute of a shift and apply the more-than-half rule.
+  // Classify each minute and apply NHS TCS 2.11 only to eligible weekday shifts.
   function splitShift(dateStr, start, end, brk) {
     var s = toMinutes(start), e = toMinutes(end);
     if (e <= s) e += 1440;
     var base = parseDate(dateStr);
+    var startDow = base.getUTCDay();
+    var wholeShiftEligible = startDow >= 1 && startDow <= 5 && BANK_HOLIDAYS.indexOf(isoDate(base)) === -1;
+    var weekdayWindow = 0;
     var mins = { day: 0, night: 0, sat: 0, sun: 0 };
     var bankHoliday = false;
     for (var m = s; m < e; m++) {
       var d = new Date(base.getTime() + Math.floor(m / 1440) * 86400000);
       var tod = m % 1440, dow = d.getUTCDay();
+      if (wholeShiftEligible && (tod >= 1200 || tod < 360)) weekdayWindow++;
       if (BANK_HOLIDAYS.indexOf(isoDate(d)) !== -1) { mins.sun++; bankHoliday = true; }
       else if (dow === 0) mins.sun++;
       else if (dow === 6) mins.sat++;
@@ -130,7 +134,7 @@
     }
     var total = e - s;
     var wholeShift = false;
-    if (mins.day > 0 && (mins.night + mins.sat + mins.sun) * 2 > total) {
+    if (wholeShiftEligible && mins.day > 0 && weekdayWindow * 2 > total) {
       mins.night += mins.day; mins.day = 0; wholeShift = true;
     }
     var paid = Math.max(0, total - Math.min(brk, total));
