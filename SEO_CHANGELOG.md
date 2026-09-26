@@ -1,5 +1,23 @@
 # SEO Changelog
 
+## 2026-09-26 - PR #27 (what-is-a-work-rota)
+- Date merged: not merged yet
+- PR: #27 https://github.com/Al2800/ShiftPro-Site/pull/27
+- Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-work-rota.html
+- Search query or queries that prompted it: "work rota", "work rota abbreviations"
+- GSC numbers at the time: page 0c/913i (28d to 2026-09-26); "work rota" 192i pos 38.0; "work rota abbreviations" 17i (7d); site 11c/3Ki pos 26.4
+- What changed: New title "Work rota: meaning, how it works, abbreviations | ShiftPro" and meta description (also og/twitter and Article JSON-LD). H1 now "What is a work rota? Meaning and common abbreviations" with a lead that defines a work rota in the first sentence. Added a "Common rota abbreviations" section (E, L, N, LD, OFF/R/RD, AL, SD, BH, TOIL, S/SICK, labelled as typical rather than universal). FAQ: shift codes question reworded to "What do the abbreviations on a work rota mean?" and three questions added ("What does rota stand for?", "How do I read my work rota?", "Can my employer change my work rota?", the last linking Acas guidance on flexibility clauses, checked 2026-09-26). Corrected the "rota is short for rotation" line (the word is Latin for wheel). FAQPage JSON-LD regenerated from the visible FAQ so the text matches exactly. dateModified and sitemap lastmod set to 2026-09-26. Made at the owner's request before the brief's 22 Oct 2026 freeze date for this page, because the page sits at position ~38 and needs content rather than a title tweak alone.
+Result (check ~4 weeks after): 
+
+## 2026-09-26 - PR #27 (what-is-a-rolling-rota)
+- Date merged: not merged yet
+- PR: #27 https://github.com/Al2800/ShiftPro-Site/pull/27
+- Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-rolling-rota.html
+- Search query or queries that prompted it: "rolling rota", "what is a rolling rota", "rolling rota meaning"
+- GSC numbers at the time: "rolling rota" 70i pos 31.4, "what is a rolling rota" 65i pos 25.4, "rolling rota meaning" 53i pos 22.9, all 0 clicks (28d to 2026-09-26); page total not recorded; site 11c/3Ki pos 26.4
+- What changed: New title "Rolling rota: meaning, examples and how it works | ShiftPro" and meta description (also og/twitter and Article JSON-LD). H1 now "What is a rolling rota? Meaning and examples" with a lead that defines a rolling rota in the first sentence and gives the 4 on 4 off example. FAQ: added "Is a rolling rota the same as a rotating shift pattern?", "Do you get weekends off on a rolling rota?", "How many hours a week do you work on a rolling rota?" and "Do you have to work bank holidays on a rolling rota?". Accuracy fixes: a 4 on 4 off cycle returns to the same start day after 7 cycles (56 days), not 8 cycles (64 days); 28 days of statutory leave at 7.5 hours is 210 hours, not 225; the bank holiday callout no longer says employers must credit a day when a bank holiday falls on a rest day (GOV.UK: no statutory right to bank holidays off, and they can count towards the 5.6 weeks; source linked, checked 2026-09-26). FAQPage JSON-LD regenerated from the visible FAQ. dateModified and sitemap lastmod set to 2026-09-26. Made at the owner's request before the brief's 21 Oct 2026 measurement date for the PR #21 FAQ, so the PR #21 result can no longer be read on its own.
+Result (check ~4 weeks after): 
+
 ## 2026-09-24 - PR #25
 - Date merged: not merged yet
 - PR: #25 https://github.com/Al2800/ShiftPro-Site/pull/25
