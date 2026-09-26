@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-09-26 - PR #PRNUM
+## 2026-09-26 - PR #26
 - Date merged: not merged yet
-- PR: #PRNUM https://github.com/Al2800/ShiftPro-Site/pull/PRNUM
+- PR: #26 https://github.com/Al2800/ShiftPro-Site/pull/26
 - Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html, https://shiftpro.uk/journal/, https://shiftpro.uk/support.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html
 - Search query or queries that prompted it: n/a (accuracy follow-up to PR #24/#25)
 - GSC numbers at the time: not recorded
