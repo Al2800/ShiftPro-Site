@@ -1,7 +1,7 @@
 # SEO Changelog
 
 ## 2026-09-26 - PR #28
-- Date merged: not merged yet
+- Date merged: 2026-09-26
 - PR: #28 https://github.com/Al2800/ShiftPro-Site/pull/28
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-rolling-rota.html, https://shiftpro.uk/journal/what-is-a-work-rota.html
 - Search query or queries that prompted it: n/a (factual corrections split from PR #27; title/FAQ rewrite held until after 22 Oct per SEO_BRIEF)
@@ -10,7 +10,7 @@
 Result (check ~4 weeks after): 
 
 ## 2026-09-26 - PR #26
-- Date merged: not merged yet
+- Date merged: 2026-09-26
 - PR: #26 https://github.com/Al2800/ShiftPro-Site/pull/26
 - Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html, https://shiftpro.uk/journal/, https://shiftpro.uk/support.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html
 - Search query or queries that prompted it: n/a (accuracy follow-up to PR #24/#25)
@@ -19,7 +19,7 @@ Result (check ~4 weeks after):
 Result (check ~4 weeks after): 
 
 ## 2026-09-24 - PR #25
-- Date merged: not merged yet
+- Date merged: 2026-09-26
 - PR: #25 https://github.com/Al2800/ShiftPro-Site/pull/25
 - Page URL(s) changed: https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html (new), https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/, https://shiftpro.uk/journal/track-actual-hours-and-pay.html
 - Search query or queries that prompted it: "nhs unsocial hours calculator", "agenda for change unsocial hours", "nhs night shift pay" (worker intent next to the NHS page, the only page with clicks)
@@ -28,7 +28,7 @@ Result (check ~4 weeks after):
 Result (check ~4 weeks after): 
 
 ## 2026-09-24 - PR #24
-- Date merged: not merged yet
+- Date merged: 2026-09-26
 - PR: #24 https://github.com/Al2800/ShiftPro-Site/pull/24
 - Page URL(s) changed: https://shiftpro.uk/, https://shiftpro.uk/journal/, https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html, https://shiftpro.uk/journal/rotating-vs-fixed-shift-patterns.html, plus App Store link targets on every journal page
 - Search query or queries that prompted it: "nhs unsocial hours", "agenda for change unsocial hours", "nhs shift patterns" (accuracy fix on the converting page); no query for the attribution and pricing changes
