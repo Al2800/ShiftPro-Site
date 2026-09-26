@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-09-26 - PR #PRNUM
+- Date merged: not merged yet
+- PR: #PRNUM https://github.com/Al2800/ShiftPro-Site/pull/PRNUM
+- Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-rolling-rota.html, https://shiftpro.uk/journal/what-is-a-work-rota.html
+- Search query or queries that prompted it: n/a (factual corrections split from PR #27; title/FAQ rewrite held until after 22 Oct per SEO_BRIEF)
+- GSC numbers at the time: not recorded
+- What changed: Factual corrections only, taken from PR #27 and applied to the pages as they are on main. Rolling rota page: a 4 on 4 off cycle gets back to the same start day after 7 cycles (56 days), not 8 cycles (64 days), in the body and in the "How does a rolling rota work" FAQ answer and its JSON-LD; 28 days of leave at 7.5 hours is 210 hours, not 225, in the body and in the annual leave FAQ answer and its JSON-LD; the bank holiday callout no longer says an employer should credit a day when a bank holiday falls on a rest day. It now says there is no legal right to bank holidays off, they can count towards the 5.6 weeks, and any extra pay or day back depends on the contract, with a link to GOV.UK (https://www.gov.uk/holiday-entitlement-rights/bank-holidays, checked 2026-09-26). Work rota page: removed "rota is short for rotation" from the body and the first FAQ answer (visible and JSON-LD); the word comes from the Latin for wheel. No title, meta, H1 or FAQ question changes, and no dateModified or sitemap lastmod bump (the brief allows error fixes on frozen pages and does not ask for date bumps). PR #27 needs a rebase onto this before it merges.
+Result (check ~4 weeks after): 
+
 ## 2026-09-26 - PR #26
 - Date merged: not merged yet
 - PR: #26 https://github.com/Al2800/ShiftPro-Site/pull/26
