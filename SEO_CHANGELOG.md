@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-09-26 - PR #PRNUM
+## 2026-09-26 - PR #28
 - Date merged: not merged yet
-- PR: #PRNUM https://github.com/Al2800/ShiftPro-Site/pull/PRNUM
+- PR: #28 https://github.com/Al2800/ShiftPro-Site/pull/28
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-rolling-rota.html, https://shiftpro.uk/journal/what-is-a-work-rota.html
 - Search query or queries that prompted it: n/a (factual corrections split from PR #27; title/FAQ rewrite held until after 22 Oct per SEO_BRIEF)
 - GSC numbers at the time: not recorded
