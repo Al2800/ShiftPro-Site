@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-09-24 - PR #25
+- Date merged: not merged yet
+- PR: #25 https://github.com/Al2800/ShiftPro-Site/pull/25
+- Page URL(s) changed: https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html (new), https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/, https://shiftpro.uk/journal/track-actual-hours-and-pay.html
+- Search query or queries that prompted it: "nhs unsocial hours calculator", "agenda for change unsocial hours", "nhs night shift pay" (worker intent next to the NHS page, the only page with clicks)
+- GSC numbers at the time: new page, no data; NHS page 6c/326i pos~6 (28d to 2026-09-20)
+- What changed: New free NHS unsocial hours calculator (band, hourly rate or salary, multiple shifts, midnight splitting, England and Wales bank holidays, eligible weekday whole-shift rule, proportional break deduction) with rates sourced from NHS Employers and an App Store CTA using ct=tool-nhs-unsocial-hours. Linked from the NHS guide (callout), the journal hub (Hours, nights and pay) and the hours and pay guide. Added to the sitemap. A 2026-09-25 correction makes the whole-shift rule apply only to weekday shifts starting on a non-bank-holiday date; Sunday and public-holiday minutes do not trigger it. The page now clarifies that the threshold counts hours from 20:00 to 06:00 and that its bank-holiday list, linked to GOV.UK, covers 2025–2028. No FAQ schema, per docs/SEO_BRIEF.md.
+Result (check ~4 weeks after): 
+
 ## 2026-09-24 - PR #24
 - Date merged: not merged yet
 - PR: #24 https://github.com/Al2800/ShiftPro-Site/pull/24
