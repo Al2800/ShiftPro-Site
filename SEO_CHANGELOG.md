@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-09-26 - PR #26
+- Date merged: not merged yet
+- PR: #26 https://github.com/Al2800/ShiftPro-Site/pull/26
+- Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/tools/nhs-unsocial-hours-calculator.html, https://shiftpro.uk/journal/, https://shiftpro.uk/support.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html
+- Search query or queries that prompted it: n/a (accuracy follow-up to PR #24/#25)
+- GSC numbers at the time: not recorded
+- What changed: Overtime notes on the NHS guide and the calculator now follow NHS Terms and Conditions Handbook section 3 (sections 3.1, 3.3 and 3.6, checked 2026-09-26, source linked on both pages): Bands 1 to 7 get time and a half, or double time on general public holidays; Bands 8 and 9 are not paid overtime; part-time staff get plain time for extra hours up to 37.5 a week. The journal hub card for the iPhone page drops "Best" and now matches that page's title. Support and the iPhone page no longer say the upgrade is one-time with no subscription: both now say ShiftPro is £4.99 on the App Store (live listing checked 2026-09-26: v1.0, no ratings yet), CSV export is included for everyone, and ShiftPro Premium (PDF, payroll and password-protected reports) is an optional subscription. Removed the iPhone page's unsourced competitor subscription prices. Bumped JSON-LD dateModified (NHS and iPhone pages) and sitemap lastmod for the pages with content changes.
+Result (check ~4 weeks after): 
+
 ## 2026-09-24 - PR #25
 - Date merged: not merged yet
 - PR: #25 https://github.com/Al2800/ShiftPro-Site/pull/25
