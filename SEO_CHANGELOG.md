@@ -1,17 +1,17 @@
 # SEO Changelog
 
-## 2026-09-26 - PR #PRNUM (what-is-a-work-rota)
+## 2026-09-26 - PR #27 (what-is-a-work-rota)
 - Date merged: not merged yet
-- PR: #PRNUM https://github.com/Al2800/ShiftPro-Site/pull/PRNUM
+- PR: #27 https://github.com/Al2800/ShiftPro-Site/pull/27
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-work-rota.html
 - Search query or queries that prompted it: "work rota", "work rota abbreviations"
 - GSC numbers at the time: page 0c/913i (28d to 2026-09-26); "work rota" 192i pos 38.0; "work rota abbreviations" 17i (7d); site 11c/3Ki pos 26.4
 - What changed: New title "Work rota: meaning, how it works, abbreviations | ShiftPro" and meta description (also og/twitter and Article JSON-LD). H1 now "What is a work rota? Meaning and common abbreviations" with a lead that defines a work rota in the first sentence. Added a "Common rota abbreviations" section (E, L, N, LD, OFF/R/RD, AL, SD, BH, TOIL, S/SICK, labelled as typical rather than universal). FAQ: shift codes question reworded to "What do the abbreviations on a work rota mean?" and three questions added ("What does rota stand for?", "How do I read my work rota?", "Can my employer change my work rota?", the last linking Acas guidance on flexibility clauses, checked 2026-09-26). Corrected the "rota is short for rotation" line (the word is Latin for wheel). FAQPage JSON-LD regenerated from the visible FAQ so the text matches exactly. dateModified and sitemap lastmod set to 2026-09-26. Made at the owner's request before the brief's 22 Oct 2026 freeze date for this page, because the page sits at position ~38 and needs content rather than a title tweak alone.
 Result (check ~4 weeks after): 
 
-## 2026-09-26 - PR #PRNUM (what-is-a-rolling-rota)
+## 2026-09-26 - PR #27 (what-is-a-rolling-rota)
 - Date merged: not merged yet
-- PR: #PRNUM https://github.com/Al2800/ShiftPro-Site/pull/PRNUM
+- PR: #27 https://github.com/Al2800/ShiftPro-Site/pull/27
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-rolling-rota.html
 - Search query or queries that prompted it: "rolling rota", "what is a rolling rota", "rolling rota meaning"
 - GSC numbers at the time: "rolling rota" 70i pos 31.4, "what is a rolling rota" 65i pos 25.4, "rolling rota meaning" 53i pos 22.9, all 0 clicks (28d to 2026-09-26); page total not recorded; site 11c/3Ki pos 26.4
