@@ -1,29 +1,29 @@
 # ShiftPro handoff
 
-Last updated: 25 September 2026. Covers the growth review and reset on 24 September 2026.
+Last updated: 29 September 2026. Covers the growth review and reset on 24 September 2026, plus the post-merge review.
 
 Read this first, then `docs/SEO_BRIEF.md` (how to work) and `SEO_CHANGELOG.md` (what changed and when). The brief replaces the earlier daily SEO handoff.
 
 ## Where things stand
 
-Nothing from the reset has been merged yet. The three reset PRs (#24, #25 and App #15) are open and have been auto-approved by the Cursor Approval Agent. That approval is not a human review. App #1 is also open as a pre-existing draft and is the base branch for #15, so four PRs are open across the two repos.
+Site #24 and #25 merged on 26 September and are live. Site #26 and #28 also merged with factual corrections. Site #27 remains open and conflicts with the SEO freeze in `docs/SEO_BRIEF.md`; it is currently unmergeable and needs a fresh decision after the October measurement dates. App #1 remains an open draft and App #15 remains open on top of it. Cursor Approval Agent approval is not a human review.
 
 | PR | What it does | Status |
 |---|---|---|
-| [Site #24](https://github.com/Al2800/ShiftPro-Site/pull/24) | Corrects NHS pay rates, adds App Store campaign links, fixes pricing claims, adds `SEO_BRIEF.md` and this handoff | Open. Merge first. |
-| [Site #25](https://github.com/Al2800/ShiftPro-Site/pull/25) | New free NHS unsocial hours calculator at `/tools/nhs-unsocial-hours-calculator.html` | Open. Stacked on #24, and GitHub retargets it to `main` once #24 merges. |
+| [Site #24](https://github.com/Al2800/ShiftPro-Site/pull/24) | Corrects NHS pay rates, adds App Store campaign links, fixes pricing claims, adds `SEO_BRIEF.md` and this handoff | Merged 26 Sep; live. |
+| [Site #25](https://github.com/Al2800/ShiftPro-Site/pull/25) | New free NHS unsocial hours calculator at `/tools/nhs-unsocial-hours-calculator.html` | Merged 26 Sep; live. |
 | [App #1](https://github.com/Al2800/ShiftPro/pull/1) | Submission-readiness branch for the shipped 1.0 baseline; base of App #15 | Open draft. Resolve this stack before #15 reaches `main`. |
-| [App #15](https://github.com/Al2800/ShiftPro/pull/15) | Version 1.1: one-time £4.99 lifetime Pro instead of subscriptions, rating prompt, updated App Store metadata | Open. **Not compiled.** Stacked on #1; needs an Xcode build and tests before merging. |
+| [App #15](https://github.com/Al2800/ShiftPro/pull/15) | Version 1.1: one-time £4.99 lifetime Pro instead of subscriptions, rating prompt, updated App Store metadata | Open. **Not compiled.** Stacked on #1; has a paid-build-9 entitlement gap to fix before release. |
 
-**Merge sequence:** Site #24 → #25. App #1 → #15; #15 remains gated on an Xcode build, `ShiftProTests`, and the Mac check in Owner actions.
+**Remaining merge sequence:** App #1 → #15, after reconciling any Mac-only 1.1 work. Fix the paid-build-9 entitlement gap, then build and run `ShiftProTests` in Xcode before merging #15. Hold Site #27 pending the 21–22 October measurements and a fresh SEO decision.
 
 Numbers at the time (GSC, 28 days to 20 Sep 2026): 7 clicks, about 2,160 impressions, average position 33.1. The NHS guide had 6 of the 7 clicks (326 impressions, position about 6). The App Store listing had 0 ratings and was still on version 1.0, released 22 July 2026.
 
 ## What the review found
 
 1. **Wrong pay figures on the one page that converts.** The NHS guide grouped Bands 1 to 3 at +50%/+88% and said only hours inside the unsocial window are enhanced. The England rates are Band 1 +47%/+94%, Band 2 +41%/+83%, Band 3 +35%/+69% and Bands 4 to 9 +30%/+60%. If more than half of a weekday shift falls between 20:00 and 06:00, the whole shift is enhanced. Source: [NHS Employers](https://www.nhsemployers.org/articles/unsocial-hours-payments), checked 24 Sep 2026. Fixed in #24.
-2. **Downloads could not be traced to pages.** `shiftpro-marketing-os` records that the campaign link was live on the site. It never was: git history has no commit containing it. Fixed in #24. The marketing-os record (`config/human_input.json`, SP-HI-002) still says it was live and should be corrected.
-3. **Pricing claims contradicted the listing.** The site said "£4.99 one-time, no subscription", while the listing is a £4.99 paid app that also sells subscriptions. Fixed in #24 for now. It will be settled properly by v1.1 (see "Pricing").
+2. **Downloads could not be traced to pages.** `shiftpro-marketing-os` records that the campaign link was live on the site. It never was: git history has no commit containing it. Fixed in #24. The marketing-os record (`config/human_input.json`, SP-HI-002) was corrected on 29 September after the deployed `ct=web-home` link was verified.
+3. **Pricing claims contradicted the listing.** The site said "£4.99 one-time, no subscription", while the listing is a £4.99 paid app that also sells subscriptions. Fixed in #24 for now. The live UK App Store listing still shows a £4.99 paid download and subscriptions as of 29 September. Change the site only after the new app and free price are live.
 4. **Wrong audience.** Most SEO work targeted manager searches ("how to make a staff rota"). Manager rostering is a non-goal in the app's `PRODUCT_DEFINITION.md`. The page that converts is aimed at workers.
 5. **Too much editing to measure.** `what-is-a-work-rota` was edited 5 times in 8 days, and 12 of 18 changelog entries had no GSC numbers. Titles were rewritten for "click-through" on pages at position 20 to 60, where the problem is ranking, not titles.
 6. **FAQ schema on every page.** Google limited FAQ rich results to government and health sites in 2023, so the FAQPage JSON-LD gives this site nothing. The same questions also repeat across pages.
@@ -31,26 +31,27 @@ Numbers at the time (GSC, 28 days to 20 Sep 2026): 7 clicks, about 2,160 impress
 
 ## Owner actions
 
-These need a person with the right access. Agents should not attempt them.
+These need Xcode on the owner's Mac or App Store Connect access. The app release remains blocked until the entitlement issue below is resolved.
 
 1. **Build app #15 in Xcode and run `ShiftProTests`.** It's based on `agent/submission-readiness`, which matches the shipped 1.0 (`main` stops on 20 Jul). GitHub Actions pins Xcode 15.2, which cannot build `MeshGradient`, and Codemagic did not report a build.
 2. **Check for unpushed 1.1 work on the Mac.** `terms.html` already describes the 1.1 lifetime Pro model, but no such code was on GitHub.
-3. **Release 1.1 in this order:**
+3. **Resolve the paid-build-9 entitlement gap before releasing 1.1.** PR #15 grants Pro automatically only if `AppTransaction.originalAppVersion` is build 8 or earlier. Under the proposed sequence, build 9 would be live while the download price remains £4.99. A customer buying build 9 during that interval would have paid for the app but would be asked to buy Pro again. Apple's iOS `originalAppVersion` is the original build number, so raising the threshold to 9 would incorrectly grant Pro to later free build-9 downloads. Design and verify an entitlement rule or cutover that covers every paid buyer without granting all subsequent free downloads Pro. Record the actual price-change boundary and test both sides.
+4. **Release 1.1 only after that fix, in this order:**
    1. Create the £4.99 non-consumable IAP `com.shiftpro.pro.lifetime`.
    2. Remove the monthly and yearly subscriptions from sale.
    3. Upload a build numbered above 8 and submit with manual release.
    4. Paste the listing copy from `Marketing/Metadata/AppStoreMetadata.md` in the app repo.
    5. Release 1.1.
    6. **Only then** set the price to Free. If the price drops while 1.0 is live, free 1.0 downloads are treated as paid customers and get Pro.
-4. **Decide whether the Cursor Approval Agent may merge.** If it can, it could deploy site changes or merge the uncompiled app change without review.
+5. **Decide whether the Cursor Approval Agent may merge.** If it can, it could deploy site changes or merge the uncompiled app change without review.
 
 ## Agent tasks
 
-### After #24 and #25 merge (same day)
+### Post-merge indexing
 
-- Submit the changed URLs to IndexNow (key `41e3ed39041643d7ab28131f0e7077ba`) and Bing.
-- In GSC, request indexing for `/tools/nhs-unsocial-hours-calculator.html` and `/journal/nhs-shift-rota-patterns.html`.
-- Fill in "Date merged" on the #24 and #25 changelog entries.
+- Site #24 and #25 merged on 26 September. Their `SEO_CHANGELOG.md` merge dates are filled in.
+- Submit the changed URLs to IndexNow (key `41e3ed39041643d7ab28131f0e7077ba`) and Bing; record each submission response.
+- In GSC, request indexing for `/tools/nhs-unsocial-hours-calculator.html` and `/journal/nhs-shift-rota-patterns.html`; record the result. Do not mark these complete until the relevant service confirms them.
 
 ### Once 1.1 is live on the App Store
 
@@ -65,7 +66,7 @@ Check the live listing (`https://itunes.apple.com/lookup?id=6757769405&country=g
 
 | Date | Check |
 |---|---|
-| From 2 Oct 2026 | App Store Connect → Analytics → Campaigns. Downloads by `ct` token should start to appear. |
+| From 2 Oct 2026 | App Store Connect → Analytics → Campaigns. Check whether downloads by `ct` token appear; record zero separately from unavailable. |
 | 21 Oct 2026 | Result for PR #21 (rolling rota FAQ) |
 | 22 Oct 2026 | Results for #23, #24 and #25. The manager-intent pages stop being frozen, but change them only if the data supports it. |
 | Weekly | Scorecard in `SEO_BRIEF.md` (GSC clicks by page, campaign downloads, conversion rate, ratings) |
