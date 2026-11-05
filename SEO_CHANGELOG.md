@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-11-05 - PR #30
+- Date merged:
+- PR: #30 https://github.com/Al2800/ShiftPro-Site/pull/30
+- Page URL(s) changed: https://shiftpro.uk/tools/calculator, https://shiftpro.uk/tools/calculator.html
+- Search query or queries that prompted it: weekday ops redirect repair (Cloudflare extensionless→.html left calculator.html 404)
+- GSC numbers at the time: unavailable (signed out); carried context that this URL was a 404 side-effect (open since about 2026-10-13; not in the sitemap)
+- What changed: added calculator.html meta-refresh + canonical to nhs-unsocial-hours-calculator.html
+Result (check ~4 weeks after): 
+
 ## 2026-09-26 - PR #28
 - Date merged: 2026-09-26
 - PR: #28 https://github.com/Al2800/ShiftPro-Site/pull/28
