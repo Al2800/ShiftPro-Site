@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-11-10 - PR pending
+## 2026-11-10 - PR #31
 - Date merged:
-- PR: pending
+- PR: #31 https://github.com/Al2800/ShiftPro-Site/pull/31
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-work-rota.html
 - Search query or queries that prompted it: "work rota" (225 impressions, pos 38.5), "shift rota" (90, pos 65.7), "shift rotas" (65, pos 61.6), "work rotas law uk" (64, pos 42.4), "work rotas law" (48, pos 33.6), "what is a rolling rota" (61, pos 26.7), "rolling rota" (57, pos 50), "rolling rota meaning" (49, pos 33.3), "rota meaning" (43, pos 18.9). All of these queries had zero clicks.
 - GSC numbers at the time: site 28 clicks, 6.2K impressions, 0.5% CTR, pos 16.6; this page 5 clicks, 1,769 impressions (28 days, 12 Oct to 8 Nov 2026). Query impressions and positions as above.
