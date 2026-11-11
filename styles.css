@@ -195,6 +195,9 @@ h1 em { font-style: normal; color: transparent; background: linear-gradient(120d
 .hub-faq-card { padding: 26px 28px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.02); display: flex; flex-direction: column; }
 .hub-faq-card h3 { font-size: 18px; line-height: 1.25; letter-spacing: -.02em; margin: 0 0 12px; color: #fff; }
 .hub-faq-card p { color: #c2c8d3; font-size: 14.5px; line-height: 1.6; margin: 0; }
+.hub-faq-card ul { margin: 10px 0 0; padding-left: 1.15em; color: #c2c8d3; font-size: 14.5px; line-height: 1.6; }
+.hub-faq-card li { margin: 0; }
+.hub-faq-card ul + p { margin-top: 10px; }
 .hub-faq-card a { color: #8fb4ee; text-decoration: none; font-weight: 500; }
 .hub-faq-card a:hover { text-decoration: underline; }
 .article-content .hub-faq { margin: 56px 0 40px; max-width: 720px; padding: 36px 32px; }
