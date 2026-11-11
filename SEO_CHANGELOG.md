@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-11-11 - PR pending
+## 2026-11-11 - PR #32
 - Date merged:
-- PR: pending
+- PR: #32 https://github.com/Al2800/ShiftPro-Site/pull/32
 - Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html
 - Search query or queries that prompted it: "what does ld mean on nhs rota"
 - GSC numbers at the time: query 54 impr, 0 clicks, pos 6.0; page 23c/3,325i, 28d to 9 Nov 2026
