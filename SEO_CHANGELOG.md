@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-11-11 - PR #32
+- Date merged:
+- PR: #32 https://github.com/Al2800/ShiftPro-Site/pull/32
+- Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html
+- Search query or queries that prompted it: "what does ld mean on nhs rota"
+- GSC numbers at the time: query 54 impr, 0 clicks, pos 6.0; page 23c/3,325i, 28d to 9 Nov 2026
+- What changed: Added an FAQ at the top of the NHS shift rota patterns questions. The first sentence answers the query: LD means Long Day, usually a 12 to 12.5 hour shift (for example 07:00 to 19:30). A short list gives other common codes (E for early, L for late, N or LN for night, LD for long day, SD or S for a short day, OFF or RD for a rest day, AL for annual leave) and notes that codes vary by Trust, so check the ward key. The same wording is in the FAQPage JSON-LD. Meta description now mentions rota codes like LD. Title and H1 unchanged. App Store links unchanged. Article dateModified set to 2026-11-11.
+Result (check ~4 weeks after): 
+
 ## 2026-11-10 - PR #31
 - Date merged:
 - PR: #31 https://github.com/Al2800/ShiftPro-Site/pull/31
