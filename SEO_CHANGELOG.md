@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-11-20 - PR #34
+- Date merged:
+- PR: #34 https://github.com/Al2800/ShiftPro-Site/pull/34
+- Page URL(s) changed: https://shiftpro.uk/journal/hse-shift-rota-patterns.html, https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/
+- Search query or queries that prompted it: Irish hospital shift-change queries, country=irl. "hospital shift change times", "when do hospital shifts change", "what time is shift change at a hospital" and "what time do doctors change shifts" (each 1 impression), plus "ld shift meaning" and "rota meaning". No revealed query contained HSE or Ireland.
+- GSC numbers at the time: 23 Oct to 19 Nov 2026, country irl: 0 clicks, 50 impressions, CTR 0%, average position 6.1 (19 Nov incomplete). Revealed pages: NHS shift rota patterns 0 clicks / 5 impressions / position 8.4; what is a work rota 0 clicks / 4 impressions / position 7.75. 20 Aug to 19 Nov 2026, country irl: 0 clicks, 95 impressions, CTR 0%, position 6.32. Site-wide 23 Oct to 19 Nov 2026: 36 clicks, 8,086 impressions, CTR 0.445%, position 14.36.
+- What changed: New HSE guide at /journal/hse-shift-rota-patterns.html. Sources linked, checked 2026-11-20. Inbound link from the NHS page only. Hub card and CollectionPage hasPart entry. Sitemap URL and journal hub lastmod. Campaign CTA ct=web-hse-shift-rota-patterns. Did not edit what-is-a-work-rota.html. After merge: IndexNow (site key) and GSC Request indexing for the new URL.
+Result (check ~4 weeks after): 
+
 ## 2026-11-20 - PR #33
 - Date merged:
 - PR: #33 https://github.com/Al2800/ShiftPro-Site/pull/33
