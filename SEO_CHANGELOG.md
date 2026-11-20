@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-11-20 - PR
+## 2026-11-20 - PR #33
 - Date merged:
-- PR:
+- PR: #33 https://github.com/Al2800/ShiftPro-Site/pull/33
 - Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-work-rota.html, https://shiftpro.uk/journal/work-rota-app-for-iphone.html, https://shiftpro.uk/journal/nhs-shift-rota-patterns.html, https://shiftpro.uk/journal/what-is-a-rolling-rota.html, https://shiftpro.uk/, https://shiftpro.uk/support.html, https://shiftpro.uk/journal/how-to-make-a-shift-rota.html, https://shiftpro.uk/journal/track-actual-hours-and-pay.html, https://shiftpro.uk/journal/shift-rota-vs-work-rota.html
 - Search query or queries that prompted it: "what is a rota", "rota meaning", "work rota", "what is a rolling rota", "rota app", "work rota app for iPhone"
 - GSC numbers at the time: 23 Oct to 19 Nov 2026. 97% of clicks are UK. NHS shift rota patterns: 31 clicks, 4,198 impressions, position 6.1. What is a work rota: 2,566 impressions, 3 clicks, 0.12% CTR, position 12.2. Queries on that page: "work rota" 689 impressions position 35, "what is a rota" 144 impressions position 19, "rota meaning" 112 impressions position 15, "what is a rolling rota" about 600 impressions position 9 over 3 months. Work rota app for iPhone: 257 impressions, 0 clicks, position 20.4. The query "rota app" is at position 10.2.
