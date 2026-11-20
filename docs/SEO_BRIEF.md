@@ -45,8 +45,9 @@ The only page that converts so far is `/journal/nhs-shift-rota-patterns.html`, t
 
 Check the live listing before writing about price. The app is moving from a £4.99 paid download with optional subscriptions to a free download with a one-time £4.99 Pro unlock (version 1.1, which `terms.html` already describes).
 
-- **Until v1.1 is live:** say "£4.99 on the App Store", "no account" and "no ads". Do not say "no subscription" or "one-time" about the app as a whole. Saying hours and pay tracking need no subscription is fine.
-- **Once v1.1 is live:** "Free to download. Pro reports are £4.99 once, with no subscription." Update `index.html`, `work-rota-app-for-iphone.html`, the JSON-LD `offers` price and the aria-labels in the same PR.
+- **Until v1.1 is live:** say "a paid download on the App Store", "no account" and "no ads". Do not name a currency. The live v1.0 price differs by storefront (checked 20 Nov 2026: UK £4.99, US $4.99, Ireland €5.99, Australia $7.99, Canada $6.99) and ShiftPro Premium is still an optional subscription. Do not say "no subscription", "one-time" or "one-off" about the app as a whole. Saying hours and pay tracking are included in the download is fine. Do not hard-code a GBP price in JSON-LD.
+- **Once v1.1 is live:** "Free to download. Pro reports are a one-time purchase on the App Store, with no subscription." Update `index.html`, `work-rota-app-for-iphone.html`, the JSON-LD `offers` and the aria-labels in the same PR. Check the live listing first. Do not hard-code £4.99 unless the page is explicitly about UK pay.
+- **Store links:** campaign buttons stay on `https://apps.apple.com/app/apple-store/id6757769405?pt=128448172&ct=<token>&mt=8`. The Smart App Banner and JSON-LD `downloadUrl` stay on `https://apps.apple.com/app/id6757769405`, with no country code and no campaign parameters.
 
 ## Weekly scorecard
 
