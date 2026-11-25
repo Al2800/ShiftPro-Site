@@ -9,6 +9,15 @@
 - What changed: Added three in-article App Store prompts. A short line after the 12.5-hour long day and night section (ct=web-nhs-rota-inline). A compact callout after the early, late and night section (ct=web-nhs-rota-mid). An end-of-article block with an App Store button (ct=web-nhs-rota-end). New links use https://apps.apple.com/app/id6757769405 with pt=128448172 and mt=8. The header button is unchanged. Title, meta description, H1, canonical and FAQ schema are unchanged. The title is 71 characters and already leads with "NHS Shift Rota Patterns". The meta description is 155 characters and already leads with "How NHS shift rota patterns work". Article dateModified and sitemap lastmod set to 2026-11-25.
 Result (check ~4 weeks after): 
 
+## 2026-11-25 - PR #35
+- Date merged:
+- PR: #35 https://github.com/Al2800/ShiftPro-Site/pull/35
+- Page URL(s) changed: https://shiftpro.uk/journal/what-is-a-work-rota.html
+- Search query or queries that prompted it: "rota meaning"
+- GSC numbers at the time: 28 days, 27 Oct to 23 Nov 2026: 4 clicks, 2,990 impressions, CTR 0.13%, average position 11.9. 7 days to 23 Nov: 1 click, 1,204 impressions, position 12.0 (impressions up from 810 the week before). Queries on the page: "rota meaning" 0 clicks / 97 impressions / position 13.1, "rolling rota meaning" 0 / 35 / 12.1, "how far in advance should you get a work rota uk" 0 / 29 / 35.7.
+- What changed: Title, meta, Open Graph, Twitter and Article JSON-LD now open with the rota definition (title 49 characters, meta 131). The first sentence is that definition. The next sentence says how a UK work rota works. FAQ is four questions, kept in step with FAQPage JSON-LD: what rota means, what a rolling rota is (link to the rolling rota guide), how far in advance you get a work rota in the UK, and rota versus roster. Notice answer checked 25 November 2026: no general statutory minimum for most workers, so check the contract or employer policy. The Workers (Predictable Terms and Conditions) Act 2023 was repealed on 6 January 2026 and never came into force (Employment Rights Act 2025 s.7). Reasonable notice of shifts for some zero-hours and low-hours workers is in the 2025 Act but not in force, and no length has been set (GOV.UK zero-hours factsheet updated 23 November 2026; timetable still dated 5 November 2026). Short App Store line after the definition and the end button, both on the existing campaign link ct=web-what-is-a-work-rota. Opening links to NHS shift rota patterns and how to make a work rota. Article dateModified and sitemap lastmod set to 2026-11-25. Follows PR #33 (20 Nov) on the same page because this window still shows 0.13% CTR.
+Result (check ~4 weeks after): 
+
 ## 2026-11-20 - PR #34
 - Date merged:
 - PR: #34 https://github.com/Al2800/ShiftPro-Site/pull/34
