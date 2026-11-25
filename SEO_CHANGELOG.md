@@ -1,5 +1,14 @@
 # SEO Changelog
 
+## 2026-11-25 - PR
+- Date merged:
+- PR:
+- Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html
+- Search query or queries that prompted it: "nhs shift patterns" (and NHS rota patterns). Related queries on the page include "nhs shifts", "nhs shift times" and "what time do hospital staff change over".
+- GSC numbers at the time: 28 days, 27 Oct to 23 Nov 2026: 33 clicks, 4,749 impressions, CTR 0.69%, average position 5.9. 7 days to 23 Nov: 10 clicks, 1,292 impressions, position 5.6. The page is about 87% of the site's clicks.
+- What changed: Added three in-article App Store prompts. A short line after the 12.5-hour long day and night section (ct=web-nhs-rota-inline). A compact callout after the early, late and night section (ct=web-nhs-rota-mid). An end-of-article block with an App Store button (ct=web-nhs-rota-end). New links use https://apps.apple.com/app/id6757769405 with pt=128448172 and mt=8. The header button is unchanged. Title, meta description, H1, canonical and FAQ schema are unchanged. The title is 71 characters and already leads with "NHS Shift Rota Patterns". The meta description is 155 characters and already leads with "How NHS shift rota patterns work". Article dateModified and sitemap lastmod set to 2026-11-25.
+Result (check ~4 weeks after): 
+
 ## 2026-11-20 - PR #34
 - Date merged:
 - PR: #34 https://github.com/Al2800/ShiftPro-Site/pull/34
