@@ -1,8 +1,8 @@
 # SEO Changelog
 
-## 2026-11-25 - PR
+## 2026-11-25 - PR #36
 - Date merged:
-- PR:
+- PR: #36 https://github.com/Al2800/ShiftPro-Site/pull/36
 - Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html
 - Search query or queries that prompted it: "nhs shift patterns" (and NHS rota patterns). Related queries on the page include "nhs shifts", "nhs shift times" and "what time do hospital staff change over".
 - GSC numbers at the time: 28 days, 27 Oct to 23 Nov 2026: 33 clicks, 4,749 impressions, CTR 0.69%, average position 5.9. 7 days to 23 Nov: 10 clicks, 1,292 impressions, position 5.6. The page is about 87% of the site's clicks.
