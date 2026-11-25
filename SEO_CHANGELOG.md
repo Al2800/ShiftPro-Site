@@ -9,6 +9,15 @@
 - What changed: Title, meta, H1, Open Graph, Twitter and WebApplication JSON-LD now cover NHS unsocial hours and overtime pay (title 57 characters, meta 150). Added sections on what unsocial hours are (England section 2 percentages by band for nights, Saturdays, Sundays and public holidays; in force since 1 July 2018, table labelled from 1 April 2020) and on Agenda for Change overtime (section 3: time and a half for bands 1 to 7, double time on a general public holiday, bands 8 and 9 including 8a not entitled, part-time plain time until 37.5 hours, unsocial percentage left out of overtime). Four FAQs, each answered in the first sentence, with FAQPage JSON-LD kept in step. Short in-content App Store prompt and the end button, both on the existing campaign link ct=tool-nhs-unsocial-hours. Link to /journal/nhs-shift-rota-patterns.html. Calculator script unchanged. dateModified and sitemap lastmod set to 2026-11-25. Sources checked 25 November 2026: NHS Terms and Conditions of Service Handbook amendment 63 (TCS Advisory Notice 04/2026, published 1 October 2026), sections 2 (England), 3, 4.2 and 10, Annex 4 and Annex 5 (https://www.nhsemployers.org/system/files/2026-10/NHS-TCS-Handbook-version-63.pdf); NHS Employers unsocial hours payments, reviewed September 2025 (https://www.nhsemployers.org/articles/unsocial-hours-payments); section 3 HTML (https://www.nhsemployers.org/tchandbook/part-2-pay/section-3-overtime-payments). Wales and Northern Ireland section 2 tables match the England percentages. Scotland's section 2 differs for bands 1 to 3. No pay-point figures in pounds were added.
 Result (check ~4 weeks after): 
 
+## 2026-11-25 - PR #36
+- Date merged:
+- PR: #36 https://github.com/Al2800/ShiftPro-Site/pull/36
+- Page URL(s) changed: https://shiftpro.uk/journal/nhs-shift-rota-patterns.html
+- Search query or queries that prompted it: "nhs shift patterns" (and NHS rota patterns). Related queries on the page include "nhs shifts", "nhs shift times" and "what time do hospital staff change over".
+- GSC numbers at the time: 28 days, 27 Oct to 23 Nov 2026: 33 clicks, 4,749 impressions, CTR 0.69%, average position 5.9. 7 days to 23 Nov: 10 clicks, 1,292 impressions, position 5.6. The page is about 87% of the site's clicks.
+- What changed: Added three in-article App Store prompts. A short line after the 12.5-hour long day and night section (ct=web-nhs-rota-inline). A compact callout after the early, late and night section (ct=web-nhs-rota-mid). An end-of-article block with an App Store button (ct=web-nhs-rota-end). New links use https://apps.apple.com/app/id6757769405 with pt=128448172 and mt=8. The header button is unchanged. Title, meta description, H1, canonical and FAQ schema are unchanged. The title is 71 characters and already leads with "NHS Shift Rota Patterns". The meta description is 155 characters and already leads with "How NHS shift rota patterns work". Article dateModified and sitemap lastmod set to 2026-11-25.
+Result (check ~4 weeks after): 
+
 ## 2026-11-25 - PR #35
 - Date merged:
 - PR: #35 https://github.com/Al2800/ShiftPro-Site/pull/35
